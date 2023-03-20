@@ -1,0 +1,80 @@
+@media screen and (max-width:1000px) 
+{
+    /*cabecera*/
+    .cont_cabecera
+    {
+        width: 95%;
+    }  
+    .menu .menu_item
+    {
+        display: none;
+    }  
+    .menu_lateral, .button_cabecera
+    {
+        display: flex;
+    }
+    /*inicio*/
+    .inicio_cont
+    {
+        flex-direction: column;
+    }
+    .inicio_texto
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .inicio_imagenes
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .texto_parrafo
+    {
+        height: 70%;
+    }
+    .texto_parrafo p
+    {
+        font-size: 5vh;
+    }
+    .texto_botones
+    {
+        width: 95%;
+    }
+    /*Obras*/
+    .obras_cont
+    {
+        align-content: flex-end;
+        flex-direction: column;
+    }
+    .obras_video
+    {
+        
+        width: 100%;
+        height: 50%;
+    }
+    .textos_tarjetas
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .contenedor_superior_obras
+    {
+        background: transparent;
+    }
+    .obras_textos h2
+    {
+        font-size: 4.5vh;
+    }
+    .obras_textos h3 
+    {
+        font-size: 2.5vh;
+    }
+    .tarjeta legend
+    {
+        font-size: 1.2vh;
+    }
+    .tarjeta img
+    {
+        width: 30%;
+    }
+}

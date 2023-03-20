@@ -1,0 +1,83 @@
+.button_cabecera
+{
+    width: 8vh;
+    height: 8vh;
+    border: solid 2px transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s;
+    display: none;
+}
+.button_cabecera:hover
+{
+    border: 2px solid #000;
+}
+.button_cabecera::before
+{
+    content: "";
+    position: absolute;
+    inset: 0 5px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: 1s;
+}
+.button_cabecera::after
+{
+    content: "";
+    position: absolute;
+    inset: 5px 0;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    transition: 1s;
+}
+.button_cabecera:hover::before
+{
+    inset: 0 -8px;
+    transform: skewY(15deg);
+}
+.button_cabecera:hover::after
+{
+    inset: -8px 0;
+    transform: skewX(15deg);
+}
+.line
+{
+    width: 80%;
+    height: 10%;
+    border: solid 1px #000;
+    transition: 0.4s;
+}
+
+.change .luno
+{
+    transform: translate(0, 310%) rotate(-45deg);
+}
+.change .ldos {opacity: 0;}
+.change .ltres 
+{
+    transform: translate(0, -350%) rotate(45deg);
+}
+/*menu lateral*/
+.menu_lateral
+{
+    z-index: 2;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 250px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 500ms ease-in-out;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+.menu_lateral .menu_item
+{
+    margin: 20px 0;
+    
+}
